@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Alunos</h1>
+    <form>
+        <label for = "anime">Nome do Anime: </label>
+        <input type = "text" name = "anime" id = "anime"><br><br>
+        <label for = "genero">Genero: </label>
+        <select name = "genero" id = "genero">
+            <option value = "Terror">Terror</option>
+            <option value = "Comedia">Comedia</option>
+            <option value = "Romance">Romance</option>
+            <option value = "Ação">Ação</option>
+            <option value = "Isekai">Isekai</option>
+            <option value = "Slice Of Life">Slice Of Life</option>
+            <option value = "Hentai">Hentai</option>
+            <option value = "Suspense">Suspense</option>
+        </select><br><br>
+        <label for = "ano">Ano de Lançamento: </label>
+        <input type = "number" name = "ano" id = "ano" min = "1900" max = "2030" step = "1"><br><br>
+        <label for = "nota">Nota: </label>
+        <input type = "number" name = "nota" id = "nota" min = "0" max = "10" step = "1"><br><br>
+
+        
+
+        <button onclick="guardarDados(event)">ENVIAR</button>
+    </form>
+
+    <ol id = "listaAnimes">
+    </ol>
+
+    <script src = "script.js"></script>
+    <link rel = "stylesheet" href = "style.css">
+</body>
+</html>
